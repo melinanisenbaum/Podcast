@@ -1,0 +1,454 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500&family=IBM+Plex+Sans:wght@400;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body {
+    width: 100vw;
+    background: #FFFFFF;
+}
+h1, h2 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 36px;
+    letter-spacing: 0;
+    line-height: 42px;
+    font-weight: 400;
+    color: #060A24;
+}
+h1 {
+    padding-bottom: 16px;
+}
+p, .footerspan {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 14px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 22px;
+    font-weight: 400;
+}
+button {
+    width: 100%;
+    height: 48px;
+    background: #00F3BB;
+    border: none;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 16px;
+    color: #060A24;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 22px;
+    font-weight: 500;
+}
+button:hover {
+    background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+    color: #FFFFFF;
+    border: none;
+}
+.nav {
+    position: relative;
+    height: 44px;
+}
+.logo {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 10px;
+    left: 16px;
+}
+.checkbox {
+    position: absolute;
+    top: 18px;
+    right: 24px;
+    opacity: 0;
+}
+.icons {
+    color: #060A24;
+    cursor: pointer;
+}
+.icons .fa-bars {
+    width: 18px;
+    height: 12px;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+.icons .fa-times {
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    top: 16px;
+    right: 19px;
+}
+.topnav {
+    display: none;
+    position: absolute;
+    top: 44px;
+    width: 100%;
+    height: 224px;
+    font-family: 'IBM Plex Mono', monospace;
+    background: #0000EC;
+    line-height: 28px;
+    padding-left: 16px;
+    padding-top: 16px;
+    padding-bottom: 24px;
+    font-size: 16px;
+    font-weight: 400;
+}
+.topnav li a{
+    color: #FFFFFF;
+}
+.topnav a:hover{
+    text-decoration-line: line-through;
+    color:#00F3BB;
+}
+.topnav a:active{
+    text-decoration-line: line-through;
+    color: #060A24;
+    opacity: 56%;
+}
+.nav input:checked ~ .topnav {
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;/*no anda*/
+}
+.nav input:checked ~ .icons .fa-bars {
+    display: none;
+}
+.nav input:not(:checked) ~ .icons .fa-times {
+    display:none;
+}
+header {
+    padding: 29px 5% 24px 5%;
+}
+del {
+    text-decoration: line-through;
+}
+.mobiletitle {
+    padding-bottom: 36px;
+    max-width: 440px;
+}
+.desktoptitle {
+    display: none;
+}
+.headerbutton {
+    width: 288px;
+}
+.episodios {    
+    padding-top: 64px;
+    padding-bottom: 143.5px;
+    clip-path: polygon(0% 2.48%, 100% 0%, 100% 97.52%, 0% 100%);
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+}
+.episodios h2{
+    color: #FFFFFF;
+    padding-left: 5%;
+    padding-bottom: 21px;
+}
+.embed-container {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.embed-podcast { /*no se achican a menos de 320px*/
+    margin: 0px 11px 11px 11px;/*el de abajo no se observa bien*/
+    width: 298px;
+    height: 225px;
+}
+.iframe {
+    width: 100%;
+    height: auto;
+    border: none;
+    overflow: hidden;
+}
+.dedonde {
+    position: relative;
+}
+.phone {
+    width: 360px;
+    height: 519px;
+    position: absolute;
+    top: -95.5px;
+}
+.phone img{
+    height: 100%;
+}
+.dedonde h2{
+    padding: 450.5px 5% 8px 5%; 
+}
+.dedonde p{
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 20px;
+}
+.invitados h2{
+    padding: 34px 5% 14px 5%;
+}
+.invitados ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.invitados li{
+    line-height: 0;
+}
+.invitados ul li img{
+    width: 100%;
+    max-width: 320px;
+    height: auto; 
+}
+.temas {
+    padding: 48px 5% 42px 5%;
+}
+.temas h2 {
+    width: 100%;
+}
+.trabajo {
+    padding-top: 24px;
+}
+.repensando {
+    padding-top: 36px;
+}
+.bases {
+    padding-top: 52px;
+}
+.seguridad {
+    padding-top: 52px;
+}
+.atemas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.themeimg {
+    height: 104px;
+    width: 100%;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+.themecaption {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 24px;
+    color: #060A24;
+    line-height: 32px;
+    letter-spacing: 0;
+    text-align: center;
+    font-weight: 600;
+    opacity: 100%;
+}
+.novedades {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    padding: 64px 5% 67px 5%;
+    text-align: center;
+    clip-path: polygon(0% 9.38%, 100% 0%, 100% 100%, 0% 100%);
+}
+.novedades h2{
+    padding-bottom: 36px;
+    color: #FFFFFF;
+}
+footer {
+    padding: 24px 14% 31px 14%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.socialicons {/*no funciona*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.socialicons i{
+    padding-top: 16px;
+    width: 14px;
+    height: 28px;
+    text-decoration: none;
+    color: #060A24;
+    opacity: 100%;
+}
+@media all and (min-width: 1024px) {
+    .nav {
+        width: 100vw;
+        padding-right: 100px;
+        padding-left: 100px;
+        position: fixed;
+        height: 80px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background: #FFFFFF;
+        z-index: 1;
+    }
+    .logo {
+        width: 36px;
+        height: 36px;
+        position: static;
+    }
+    .checkbox {
+        display: none;
+    }
+    .icons {
+        display: none;
+    }
+    .topnav {
+        display: inline-flex;
+        width: min-content;
+        position: static;
+        background: none;
+        padding: 0;
+    }
+    .topnav li{
+        display: inline;
+        margin-left: 48px;
+    }
+    .topnav li a{/* no lo veo!!!*/
+        color: #060A24;
+        opacity: 100%;
+    }
+    header {
+        padding: 80px 13.89% 5px 13.89%;
+    }
+    br {
+        display: none;
+    }
+    .dot{
+        color: #0000EC;
+    }
+    .mobiletitle {
+        display: none;
+    }
+    .desktoptitle {
+        display: block;
+        padding-bottom: 56px;
+        max-width: 628px;
+    }
+    h1 {
+        padding-top: 120px;
+        padding-bottom: 0;
+        font-size: 64px;
+        line-height: 84px;
+        max-width: none;
+    }
+    h2 {
+        font-size: 48px;
+        line-height: 62px;
+    }
+    p, .footerspan {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    button {
+        height: 56px;
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 400;
+    }
+    .headerbutton {
+        width: 226px;
+    }
+    .episodios {
+        padding-top: 186px;
+        padding-bottom: 232.6px;    
+        clip-path: polygon(0% 13.8%, 100% 0%, 100% 86.2%, 0% 100%);/* no me funciona*/
+    }
+    .episodios h2 {
+        padding-right: 13.89%; 
+        padding-left: 13.89%;
+    }
+    .embed-container {
+        display: flex;
+        flex-direction: row;
+        justify-items: space-between;
+        flex-wrap: wrap;
+        max-width: 1240px;
+    }
+    .embed-podcast {
+        width: 584px;
+        height: 225px;
+    }
+    .dedonde {/*no se ajusta el contenido del p y del h2 en 1024*/
+        padding: 20.4px 17.8% 64px 13.9%;
+        height: 555.4px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .phone {
+        width: 457.6px;
+        height: 660px;
+        position: relative;
+        top: -189px;
+        display: flex;
+        flex: row;
+        justify-content: center;
+    }
+    .phone img{
+        height: 100%;
+    }
+    .dedonde h2{
+        padding-top: 0;
+        padding-left: 4.3%;
+        padding-bottom: 24px;
+
+    }
+    .dedonde p{
+        padding-left: 4.3%;
+        max-width: 464px;
+    }
+    .invitados h2{
+        padding: 0px 13.9% 36px 13.9%;
+    }
+    .invitados ul{
+        max-width: 1440px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .invitados ul li img{
+        max-width: 480px;
+    }
+    .temas {
+        padding: 64px 13.9% 34px 13.9%;
+    }
+    .temas-conteiner {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 1440px;
+    }
+    .trabajo, .repensando, .bases, .seguridad {
+        padding-top: 56px;
+        width: 260px;
+    }
+    .novedades {
+        background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+        padding: 213px 0px 151px 0px;
+        clip-path: polygon(0% 13.8%, 100% 0%, 100% 100%, 0% 100%);
+    }
+    .novedades h2{
+        padding-bottom: 36px;
+    }
+    .last-button {
+        width: 345px;
+    }
+    footer {
+        padding: 36px 100px 31px 100px;
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+    }
+    .socialicons i{
+        padding-top: 0px;
+        height: 28px;
+        width: 18px;
+        margin-left: 36px;
+    }
+}
