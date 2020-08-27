@@ -157,13 +157,13 @@ del {
     justify-content: space-around;
 }
 .embed-podcast { /*no se achican a menos de 320px*/
-    margin: 0px 11px 11px 11px;/*el de abajo no se observa bien*/
+    margin: 0px 11px 11px 11px;
     width: 298px;
-    height: 225px;
+    height: 232px;
 }
 .iframe {
     width: 100%;
-    height: auto;
+    height: 232px;
     border: none;
     overflow: hidden;
 }
@@ -259,7 +259,6 @@ footer {
     padding: 24px 14% 31px 14%;
     display: flex;
     flex-flow: column;
-    align-items: center;
 }
 .socialicons {/*no funciona*/
     display: flex;
@@ -274,7 +273,10 @@ footer {
     color: #060A24;
     opacity: 100%;
 }
-@media all and (min-width: 1024px) {
+@media all and (min-width: 768px) {
+    body {
+        max-width: 1440px                                                                                                    ;
+    }
     .nav {
         width: 100vw;
         padding-right: 100px;
@@ -305,6 +307,8 @@ footer {
         position: static;
         background: none;
         padding: 0;
+        height: 80px;
+        align-items: center;
     }
     .topnav li{
         display: inline;
@@ -356,12 +360,10 @@ footer {
         width: 226px;
     }
     .episodios {
-        padding-top: 186px;
-        padding-bottom: 232.6px;    
+        padding: 186px 0 232.6px 0;  
         clip-path: polygon(0% 13.8%, 100% 0%, 100% 86.2%, 0% 100%);/* no me funciona*/
     }
     .episodios h2 {
-        padding-right: 13.89%; 
         padding-left: 13.89%;
     }
     .embed-container {
@@ -369,11 +371,11 @@ footer {
         flex-direction: row;
         justify-items: space-between;
         flex-wrap: wrap;
-        max-width: 1240px;
     }
     .embed-podcast {
+        margin: 0px 2.5% 72px 2.5%; 
         width: 584px;
-        height: 225px;
+        height: 232px;
     }
     .dedonde {/*no se ajusta el contenido del p y del h2 en 1024*/
         padding: 20.4px 17.8% 64px 13.9%;
