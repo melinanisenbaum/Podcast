@@ -94,9 +94,11 @@ button:hover {
     line-height: 28px;
     padding-left: 16px;
     padding-top: 16px;
-    padding-bottom: 24px;
     font-size: 16px;
     font-weight: 400;
+}
+.topnav li{
+    height: 52px;
 }
 .topnav li a{
     color: #FFFFFF;
@@ -113,7 +115,7 @@ button:hover {
 .nav input:checked ~ .topnav {
     display: flex;
     flex-direction: column;
-    align-items: space-between;/*no anda*/
+    align-items: space-between;
 }
 .nav input:checked ~ .icons .fa-bars {
     display: none;
@@ -156,7 +158,7 @@ del {
     flex-wrap: wrap;
     justify-content: space-around;
 }
-.embed-podcast { /*no se achican a menos de 320px*/
+.embed-podcast { 
     margin: 0px 11px 11px 11px;
     width: 298px;
     height: 232px;
@@ -260,7 +262,7 @@ footer {
     display: flex;
     flex-flow: column;
 }
-.socialicons {/*no funciona*/
+.socialicons {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -274,9 +276,6 @@ footer {
     opacity: 100%;
 }
 @media all and (min-width: 768px) {
-    body {
-        max-width: 1440px                                                                                                    ;
-    }
     .nav {
         width: 100vw;
         padding-right: 100px;
@@ -314,14 +313,14 @@ footer {
         display: inline;
         margin-left: 48px;
     }
-    .topnav li a{/* no lo veo!!!*/
+    .topnav li a{
         color: #060A24;
         opacity: 100%;
     }
     header {
         padding: 80px 13.89% 5px 13.89%;
     }
-    br {
+    header br {
         display: none;
     }
     .dot{
@@ -360,28 +359,31 @@ footer {
         width: 226px;
     }
     .episodios {
-        padding: 186px 0 232.6px 0;  
+        padding-top: 186px; 
+        padding-bottom: 160.6px;  
         clip-path: polygon(0% 13.8%, 100% 0%, 100% 86.2%, 0% 100%);/* no me funciona*/
     }
     .episodios h2 {
         padding-left: 13.89%;
+        padding-bottom: 26px;
     }
     .embed-container {
         display: flex;
         flex-direction: row;
         justify-items: space-between;
         flex-wrap: wrap;
+        padding-left: 6.95%;
+        padding-right: 6.95%;
+        padding-bottom: 72px; 
     }
     .embed-podcast {
-        margin: 0px 2.5% 72px 2.5%; 
         width: 584px;
         height: 232px;
     }
-    .dedonde {/*no se ajusta el contenido del p y del h2 en 1024*/
-        padding: 20.4px 17.8% 64px 13.9%;
-        height: 555.4px;
+    .dedonde {
+        padding: 20.4px 13.9% 0 13.9%;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         flex-wrap: wrap;
     }
     .phone {
@@ -389,22 +391,17 @@ footer {
         height: 660px;
         position: relative;
         top: -189px;
-        display: flex;
-        flex: row;
-        justify-content: center;
     }
-    .phone img{
-        height: 100%;
+    .text {
+        margin left: 4.3%;
+        max-width: 464px;
+        padding-bottom: 0;
+        height: 660px;
     }
     .dedonde h2{
         padding-top: 0;
-        padding-left: 4.3%;
         padding-bottom: 24px;
-
-    }
-    .dedonde p{
-        padding-left: 4.3%;
-        max-width: 464px;
+        padding-right: 0;
     }
     .invitados h2{
         padding: 0px 13.9% 36px 13.9%;
@@ -430,6 +427,14 @@ footer {
         padding-top: 56px;
         width: 260px;
     }
+    .atemas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .themecaption {
+        width: 220px;
+    }
     .novedades {
         background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
         padding: 213px 0px 151px 0px;
@@ -453,4 +458,4 @@ footer {
         width: 18px;
         margin-left: 36px;
     }
-}
+
