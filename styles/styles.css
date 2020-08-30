@@ -37,16 +37,20 @@ button {
     border: none;
     font-family: 'IBM Plex Mono', monospace;
     font-size: 16px;
-    color: #060A24;
     letter-spacing: 0;
     text-align: center;
     line-height: 22px;
     font-weight: 500;
 }
+button a{
+    color: #060A24;
+}
 button:hover {
     background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
-    color: #FFFFFF;
     border: none;
+}
+button a:hover{
+    color: #FFFFFF;
 }
 .nav {
     position: relative;
@@ -115,7 +119,6 @@ button:hover {
 .nav input:checked ~ .topnav {
     display: flex;
     flex-direction: column;
-    align-items: space-between;
 }
 .nav input:checked ~ .icons .fa-bars {
     display: none;
@@ -370,7 +373,6 @@ footer {
     .embed-container {
         display: flex;
         flex-direction: row;
-        justify-items: space-between;
         flex-wrap: wrap;
         padding-left: 6.95%;
         padding-right: 6.95%;
@@ -381,10 +383,10 @@ footer {
         height: 232px;
     }
     .dedonde {
-        padding: 20.4px 13.9% 0 13.9%;
+        padding: 20.4px 6.95% 64px 13.9%;
+        height: 555.4px;
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
     }
     .phone {
         width: 457.6px;
@@ -393,10 +395,12 @@ footer {
         top: -189px;
     }
     .text {
-        margin left: 4.3%;
         max-width: 464px;
+        max-height: 385px;
         padding-bottom: 0;
         height: 660px;
+        position: relative;
+        left: 4.3%;
     }
     .dedonde h2{
         padding-top: 0;
@@ -415,12 +419,15 @@ footer {
         max-width: 480px;
     }
     .temas {
-        padding: 64px 13.9% 34px 13.9%;
+        padding: 64px 0 34px 0;
     }
+    .temas h2{
+        padding-left: 13.9%;
+    }    
     .temas-conteiner {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
         max-width: 1440px;
     }
     .trabajo, .repensando, .bases, .seguridad {
@@ -458,4 +465,25 @@ footer {
         width: 18px;
         margin-left: 36px;
     }
-
+    @media all and (min-width: 768px) and (max-width: 1024px) {
+        .dedonde {
+            height: 1000px;
+            display: flex;
+            flex-direction: column;
+        }
+        .phone {
+            width: 457.6px;
+            height: 660px;
+            position: relative;
+            top: -189px;
+        }
+        .text {
+            position: relative;
+            top: -100px;
+        }
+        .dedonde h2{
+            padding-top: 0;
+            padding-bottom: 24px;
+            padding-right: 0;
+        }
+    }
