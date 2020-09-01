@@ -41,15 +41,11 @@ button {
     text-align: center;
     line-height: 22px;
     font-weight: 500;
-}
-button a{
     color: #060A24;
 }
 button:hover {
     background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
     border: none;
-}
-button a:hover{
     color: #FFFFFF;
 }
 .nav {
@@ -164,13 +160,13 @@ del {
 .embed-podcast { 
     margin: 0px 11px 11px 11px;
     width: 298px;
-    height: 232px;
-}
-.iframe {
-    width: 100%;
-    height: 232px;
-    border: none;
+    height: 225px;
     overflow: hidden;
+}
+.capítulos {
+    width: 100%;
+    height: 225px;
+    border: none;
 }
 .dedonde {
     position: relative;
@@ -188,8 +184,8 @@ del {
     padding: 450.5px 5% 8px 5%; 
 }
 .dedonde p{
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 5%;
+    padding-right: 5%;
     padding-bottom: 20px;
 }
 .invitados h2{
@@ -424,7 +420,7 @@ footer {
     .temas h2{
         padding-left: 13.9%;
     }    
-    .temas-conteiner {
+    .temas-container {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -433,6 +429,9 @@ footer {
     .trabajo, .repensando, .bases, .seguridad {
         padding-top: 56px;
         width: 260px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .atemas {
         display: flex;
@@ -441,6 +440,7 @@ footer {
     }
     .themecaption {
         width: 220px;
+        text-align: center;
     }
     .novedades {
         background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
