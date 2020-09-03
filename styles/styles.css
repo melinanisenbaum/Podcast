@@ -30,9 +30,7 @@ p, .footerspan {
     line-height: 22px;
     font-weight: 400;
 }
-button {
-    width: 100%;
-    height: 48px;
+.headerbutton, .last-button {
     background: #00F3BB;
     border: none;
     font-family: 'IBM Plex Mono', monospace;
@@ -43,7 +41,7 @@ button {
     font-weight: 500;
     color: #060A24;
 }
-button:hover {
+.headerbutton:hover {
     background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
     border: none;
     color: #FFFFFF;
@@ -137,10 +135,11 @@ del {
 }
 .headerbutton {
     width: 288px;
+    padding: 13px 96px 13px 96px;
 }
 .episodios {    
     padding-top: 64px;
-    padding-bottom: 143.5px;
+    padding-bottom: 110px;
     clip-path: polygon(0% 2.48%, 100% 0%, 100% 97.52%, 0% 100%);
     background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
 }
@@ -150,19 +149,20 @@ del {
     padding-bottom: 21px;
 }
 .embed-container {
-    width: 100vw;
-    margin-left: 3.44%;
-    margin-right: 3.44%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 632px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .chapters {
     border: none;
-    width: 104%;
-    height: 334px;
-    transform: scale(calc(1 / 1.04));
-    translate: (-2%, -4.5px);
+    width: 298px;
+    height: 225px;
+    padding-left: 11px;
+    padding-right: 11px;
 }
 .dedonde {
     position: relative;
@@ -250,6 +250,14 @@ del {
 }
 .novedades h2{
     padding-bottom: 36px;
+    color: #FFFFFF;
+}
+.last-button{
+    padding: 13px 43px 13px 43px;
+}
+.last-button:hover {
+    background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+    border: none;
     color: #FFFFFF;
 }
 footer {
@@ -344,18 +352,13 @@ footer {
         font-size: 16px;
         line-height: 24px;
     }
-    button {
-        height: 56px;
-        font-size: 18px;
-        line-height: 24px;
-        font-weight: 400;
+    .headerbutton, .last-button {
     }
     .headerbutton {
-        width: 226px;
+        padding: 16px 59px 16px 59px;
     }
     .episodios {
         padding-top: 186px; 
-        padding-bottom: 160.6px;  
         clip-path: polygon(0% 13.8%, 100% 0%, 100% 86.2%, 0% 100%);/* no me funciona*/
     }
     .episodios h2 {
@@ -363,14 +366,10 @@ footer {
         padding-bottom: 26px;
     }
     .embed-container {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        padding-left: 6.95%;
-        padding-right: 6.95%;
-        padding-bottom: 72px; 
+        padding-bottom: 72px;
+        max-width: 1240px;
     }
-    .embed-podcast {
+    .chapters {
         width: 584px;
         height: 232px;
     }
@@ -447,7 +446,7 @@ footer {
         padding-bottom: 36px;
     }
     .last-button {
-        width: 345px;
+        padding: 16px 59px 16px 59px;
     }
     footer {
         padding: 36px 100px 31px 100px;
