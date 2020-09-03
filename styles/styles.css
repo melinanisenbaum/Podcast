@@ -159,10 +159,10 @@ del {
 }
 .chapters {
     border: none;
-    width: 298px;
-    height: 225px;
-    padding-left: 11px;
-    padding-right: 11px;
+    width: 104%;
+    height: 334px;
+    transform: scale(calc(1 / 1.04)) translate(-2%, -4.5px);
+        
 }
 .dedonde {
     position: relative;
