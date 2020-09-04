@@ -151,17 +151,15 @@ del {
 .embed-container {
     margin-left: auto;
     margin-right: auto;
-    max-width: 632px;
+    max-width: 584px;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
 }
 .chapters {
     border: none;
     margin: 0 11px 11px 11px;
     width: 104%;
-    height: 234px;
+    height: 232px;
     transform: scale(calc(1 / 1.04));        
 }
 .dedonde {
@@ -358,15 +356,21 @@ footer {
     .episodios {
         padding-top: 186px;
         padding-bottom: 146.6px;
-        clip-path: polygon(0% 13.8%, 100% 0%, 100% 86.2%, 0% 100%);/* no me funciona*/
+        clip-path: polygon(0% 14.53%, 100% 0%, 100% 85.47%, 0% 100%);/* no me funciona*/
     }
     .episodios h2 {
         padding-left: 13.89%;
         padding-bottom: 26px;
     }
+    .embed-container {
+        max-width: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
     .chapters {
-        width: 584px;
-        height: 232px;
+        max-width: 584px;
         margin: 0 36px 72px 36px;
     }
     .dedonde {
