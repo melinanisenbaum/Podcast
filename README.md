@@ -1,3 +1,1 @@
-# melinanisenbaum.github.io
-Hello!
-This is my version of proyecto PODCAST at 08/26/2020.
+Este es un proyecto de PODCAST. lo encontraras en https://hello-world-pale-blue-dot-postcast.netlify.app/
